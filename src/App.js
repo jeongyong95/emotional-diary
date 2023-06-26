@@ -1,19 +1,26 @@
 import './App.css';
-import getEmotionImage from './util/ImageUtils'
+import {Link, Route, Routes} from "react-router-dom";
+import Home from "./page/Home";
+import New from "./page/New";
+import Diary from "./page/Diary";
+import Edit from "./page/Edit";
+import Header from "./component/Header";
 
 function App() {
     return (
         <div className="App">
-            <h1>안녕! 나는 일기장이야ㅎ</h1>
-            <main>
-                <article>
-                    <img alt={"감정1"} src={getEmotionImage(1)}/>
-                    <img alt={"감정2"} src={getEmotionImage(2)}/>
-                    <img alt={"감정3"} src={getEmotionImage(3)}/>
-                    <img alt={"감정4"} src={getEmotionImage(4)}/>
-                    <img alt={"감정5"} src={getEmotionImage(5)}/>
-                </article>
-            </main>
+            <header>
+                <Link to={"/"}>Home</Link>
+                <Link to={"/new"}>New</Link>
+                <Link to={"/diary"}>diary</Link>
+                <Link to={"/edit"}>edit</Link>
+            </header>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/new"} element={<New/>}/>
+                <Route path={"/diary/:id"} element={<Diary/>}/>
+                <Route path={"/edit"} element={<Edit/>}/>
+            </Routes>
         </div>
     );
 }

@@ -1,0 +1,48 @@
+.Editor {
+
+}
+
+.Editor .EditorSection {
+    margin-bottom: 40px;
+}
+
+.Editor h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Editor input, textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: "Nanum Pen Script";
+}
+
+.Editor input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.Editor textarea {
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.Editor .BottomSection {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Editor .EmotionListWrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+}

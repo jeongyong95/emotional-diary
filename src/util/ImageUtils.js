@@ -18,4 +18,30 @@ const getEmotionImage = (emotionId) => {
             return emotion5
     }
 }
-export default getEmotionImage;
+export const EMOTION_LIST = [
+    {
+        id:1,
+        name:"완전 좋음",
+        src: getEmotionImage(1)
+    },
+    {
+        id:2,
+        name:"좋음",
+        src: getEmotionImage(2)
+    },
+    {
+        id:3,
+        name:"보통",
+        src: getEmotionImage(3)
+    },
+    {
+        id:4,
+        name:"나쁨",
+        src: getEmotionImage(4)
+    },
+    {
+        id:5,
+        name:"완전 나쁨",
+        src: getEmotionImage(5)
+    }
+]
