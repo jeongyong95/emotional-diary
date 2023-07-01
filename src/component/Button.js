@@ -1,7 +1,10 @@
 import "./Button.css"
 
+export const POSITIVE = 'positive'
+export const NEGATIVE = 'negative'
+
 const Button = ({text, type, onClick}) => {
-    const buttonType = ["positive", "negative"].includes(type) ? type : "default"
+    const buttonType = [POSITIVE, NEGATIVE].includes(type) ? type : "default"
 
     return <button className={[`Button`, `Button_${buttonType}`].join(" ")}
                    onClick={onClick}>
@@ -9,6 +12,3 @@ const Button = ({text, type, onClick}) => {
     </button>
 }
 export default Button
-
-export const POSITIVE = 'positive'
-export const NEGATIVE = 'negative'

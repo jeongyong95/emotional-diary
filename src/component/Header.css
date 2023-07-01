@@ -6,7 +6,7 @@
     border-bottom: 1px solid #e2e2e2;
 }
 
-.Header > div header {
+.Header > div, header {
     display: flex;
 }
 
@@ -22,10 +22,10 @@
 
 .Header .left {
     width: 25%;
-    justify-content: start;
+    justify-content: left;
 }
 
 .Header .right {
     width: 25%;
-    justify-content: end;
+    justify-content: right;
 }

@@ -4,7 +4,7 @@ import emotion3 from '../image/emotion3.png'
 import emotion4 from '../image/emotion4.png'
 import emotion5 from '../image/emotion5.png'
 
-const getEmotionImage = (emotionId) => {
+export const getEmotionImage = (emotionId) => {
     switch (emotionId) {
         case 1 :
             return emotion1;
